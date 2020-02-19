@@ -39,7 +39,7 @@
       ],
     },
     'conditions': [
-      ['OS!="win"', {
+      ['OS in "linux android"', {
         'defines': [
           '__Userspace_os_Linux',
           '_GNU_SOURCE',
