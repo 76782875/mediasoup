@@ -39,7 +39,7 @@
       ],
     },
     'conditions': [
-      ['OS in "linux android"', {
+      ['OS!="win"', {
         'defines': [
           '__Userspace_os_Linux',
           '_GNU_SOURCE',
@@ -77,7 +77,7 @@
           'NON_WINDOWS_DEFINE'
         ],
       }],
-      [ 'sctp_debug == "true"', {
+      ['sctp_debug == "true"', {
         'defines': [ 'SCTP_DEBUG' ]
       }]
     ],
